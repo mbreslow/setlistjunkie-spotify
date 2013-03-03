@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <head>
+        <!-- Spotify CSS files -->
+        <link rel="stylesheet" type="text/css" href="sp://resources/css/eve.css">
+        <link rel="stylesheet" type="text/css" href="sp://resources/css/api.css">
+        <link rel="stylesheet" type="text/css" href="sp://resources/css/player.css">
+        <link rel="stylesheet" type="text/css" href="sp://resources/css/list.css">
+
+        <!-- Project CSS files -->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/github.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header" class="banner">
+                <h1>Setlists in Spotify</h1>
+            </div>
+            <div id="nowplayingwrapper" class="subbanner">
+            	<!-- what's playing in spotify now -->
+            	<button class="sp-button sp-primary-button" id="reload-button">Update</button>
+            	<div id="nowplaying"></div>
+            </div>
+            <div id="setlists"></div>
+        </div>
+        <hr/>
+        
+        <script src="/js/jquery-1.9.1.js" type="text/javascript"></script>
+        <script src="/js/setlistjunkieapp.js" type="text/javascript"></script>
+        <script src="/js/main.js" type="text/javascript"></script>
+    </body>
+</html>
