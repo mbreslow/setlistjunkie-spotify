@@ -32,3 +32,4 @@ Development has just begun and is in very early stages.  There are still many fe
  * [@SpotifyPlatform](https://twitter.com/#!/SpotifyPlatform) on Twitter
  * [setlist.fm API](http://api.setlist.fm/docs/index.html)
 
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/52a90b7223115c7cdc4415d73469248c "githalytics.com")](http://githalytics.com/mbreslow/setlistjunkie-spotify)
