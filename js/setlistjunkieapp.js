@@ -28,8 +28,8 @@
         $.getJSON(uri, function(data) {
         	$.each(data.setlists.setlist, function(i, item) {
         		if (item.sets && item.sets.set) {
-        			console.log("typeof item.sets.set: " + typeof item.sets.set);
-        			if (typeof item.sets.set === 'Array') {
+        			console.log("isArray(item.sets.set): " + isArray(item.sets.set));
+        			if (isArray(item.sets.set)) {
 	        			$.each(item.sets.set, function(i, set) {
 	        				handleSet(artistName,item,set);	
 	        			});
@@ -187,5 +187,10 @@
      */
     function endsWith(str, suffix) {
 	    return str.indexOf(suffix, str.length - suffix.length) !== -1;
+	}
+	
+	
+	function isArray(obj) {
+		return ( Object.prototype.toString.call( obj ) === '[object Array]' );
 	}
 }( window.setlistjunkieapp = window.setlistjunkieapp || {} , jQuery));
