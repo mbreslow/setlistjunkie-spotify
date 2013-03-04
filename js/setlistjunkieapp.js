@@ -85,16 +85,16 @@
     		var songname = item['@name'];  		
     		pipeline.push(function() {
     			findTrack(artist, songname, function(srchArtist, srchSong, track, searchQuery) {
-    				var fullInfo = "<li>"+srchSong;
     				if (track != null) {
     					console.log("Adding to playlist " + track.toString());
     					setlistPlaylist.add(track);
     				}
     				else {
-    					fullInfo += " (not found in Spotify - query " + searchQuery + ")";    					
+    					var missingInfo = "<li>"+srchSong;
+    					missingInfo += " [#"+i+"] (not found in Spotify - query " + searchQuery + ")"; 
+    					missingInfo += "</li>";    		
+    					fullSetlistListItems += missingInfo;			
     				}
-    				fullInfo += "</li>";
-    				fullSetlistListItems += fullInfo;
     				if (pipeline.length>0) {
     					var next = pipeline.shift();
     					next();
