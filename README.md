@@ -3,7 +3,7 @@
 This is a Spotify App that brings recent Setlist info into Spotify
 
 ## Development Status
-Development has just begun and is in very early stages.  There are still many features to develop, a look-and-feel that is absent and some bugs to squash. 
+This is inactive
 
 ## Installation (mac/linux)
 
